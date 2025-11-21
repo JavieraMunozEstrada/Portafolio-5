@@ -1,0 +1,30 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Javiera Munoz Estrada — MBA Portfolio"
+  navbar:
+    left:
+      - text: Home
+        file: index.qmd
+      - text: Resume
+        file: resume.qmd
+      - text: Projects
+        file: projects.qmd
+      - text: Skills
+        file: skills.qmd
+      - text: Contact
+        file: contact.qmd
+  page-footer:
+    left: "© {{< meta year >}} Javiera Muñoz Estrada · Vancouver, BC"
+    right: "[LinkedIn](https://www.linkedin.com/in/javiera-munoz-48a518379){target=_blank rel=noopener} · [Email](mailto:javiera.estrada@hotmail.com)"
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: false
+    number-sections: false
+    smooth-scroll: true
+lang: en
